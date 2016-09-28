@@ -9,13 +9,25 @@
         <base href="/">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css">
         <link rel="stylesheet" href="main.css">
-        <link rel="icon" href="http://v4-alpha.getbootstrap.com/favicon.ico">
+        <link rel="icon" href="http://getbootstrap.com/favicon.ico">
     </head>
     <body class="container">
-        <div class="col-xs-4 offset-xs-4">
-            <img src="http://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="bootstrap logo">
+        <img src="http://getbootstrap.com/assets/brand/bootstrap-solid.svg"
+        class="logo m-x-auto" alt="bootstrap logo">
+        <h2 class="text-xs-center">
+            Bootstrap 4
+            <a href="https://github.com/twbs/bootstrap/milestones">milestone</a>
+            progress
+        </h2>
+        <div class="col-xs-12" id="miles">
+            <div class="mile">
+                <h5 class="mile__label">
+                    <a class="mile__title" href=""></a>
+                    <div class="mile__nums"></div>
+                </h5>
+                <progress class="mile__progress progress"></progress>
+            </div>
         </div>
-        <div class="col-xs-12" id="miles"></div>
 
         <noscript>Enable JavaScript to view this web page.</noscript>
         <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> -->
