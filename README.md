@@ -1,2 +1,2 @@
-# is-bs4-ready
-A page for displaying Bootstrap 4 development progress. https://mikkelrd.github.io/is-bs4-ready
+# Is Bootstrap v4.0 ready to use?
+A page for displaying the development progress of the long-awaited Bootstrap version 4.0. https://mikkelrd.github.io/is-bs4-ready
