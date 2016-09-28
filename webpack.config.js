@@ -2,7 +2,12 @@ let webpack = require('webpack');
 let autoprefixer = require('autoprefixer');
 let cssnano = require('cssnano');
 
-let helpers = require('./config/helpers');
+let path = require('path');
+let _root = path.resolve(__dirname, '..');
+function root(args) {
+  args = Array.prototype.slice.call(arguments, 0);
+  return path.join.apply(path, [_root].concat(args));
+}
 
 module.exports = {
   devServer: {
@@ -14,7 +19,7 @@ module.exports = {
   entry: './main.ts',
 
   output: {
-    path: helpers.root('build'),
+    path: root('build'),
     publicPath: '/',
     filename: 'main.js',
   },
@@ -67,8 +72,8 @@ module.exports = {
       comments: false,
       compress: {
         drop_console: true,
-        dead_code: true,
         drop_debugger: true,
+        dead_code: true,
         unused: true,
       },
     }),
