@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var request = new XMLHttpRequest();
 
   request.addEventListener('load', function(){
-    console.log(JSON.parse(this.responseText));
+    // console.log(JSON.parse(this.responseText));
 
     JSON.parse(this.responseText)
     .filter(function(mile){ return mile.title.includes('v4'); })
